@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>照片合集</title>
+    <style type="text/css">
+        .photo{''}
+    </style>
+</head>
+<body>
+{% for photo_day in photos_day %}
+<div class="photo"><a href="{% url 'photos:photos' photo_day 1 %}" class="photo"><img src="">{{ photo_day }}</a></div>
+{% endfor %}
+</body>
+</html>
